@@ -9,7 +9,8 @@
         "128": "logo/logo-128.png"
     },
     "action": {
-        "default_title": "Hide Comments From Client"
+        "default_title": "Hide Comments From Client",
+        "default_popup": "popup/popup.html"
     },
     "permissions": [],
     "host_permissions": [
