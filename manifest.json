@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
-    "name": "Hide Comments From Client",
-    "description": "A minimal chrome extension which will set comment visibility to 'Hide from Client' by default in Productive platform",
+    "name": "Productive - Hidden From Client",
+    "description": "This extension will set comment visibility to 'Hidden from Client' by default in Productive.io tasks",
     "version": "1.0.1",
     "icons": {
         "16": "logo/logo-16.png",
@@ -9,10 +9,9 @@
         "128": "logo/logo-128.png"
     },
     "action": {
-        "default_title": "Hide Comments From Client",
+        "default_title": "Productive - Hidden From Client",
         "default_popup": "popup/popup.html"
     },
-    "permissions": ["https://app.productive.io/*"],
     "content_scripts": [{
         "js": ["foreground.js"],
         "matches": ["https://app.productive.io/*"]
