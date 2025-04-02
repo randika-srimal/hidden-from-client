@@ -20,8 +20,9 @@ function waitForElm(selector) {
 }
 
 async function start() {
+    console.info('Starting Productive - Hidden from Client');
     let visibleToAllSelected = true;
-    const commentBox = await waitForElm('#fullscreen-modal-container > div > main > div > div.task-form-page__main > div.task-form-page__content > div.activity-form._form_h8tMg.js-organization-project-tasks-task-2-route-activity-form > form > div.comment-field.is-avatar-shown.activity-form__comment-field > div.comment-field__text-field-container.js-comment-field-text-field-container > div > div.text-editor__editor-container');
+    const commentBox = await waitForElm('#fullscreen-modal-container > div > main > div > div.task-form-page__main > div.task-form-page__content > div.activity-form._form_h8tMg.js-organization-project-tasks-task-2-route-activity-form > form > div.comment-field.is-avatar-shown.activity-form__comment-field > div.comment-field__text-field-container.js-comment-field-text-field-container > div');
     commentBox.addEventListener('click', async () => {
         const visibilityToggleButton = await waitForElm('#fullscreen-modal-container > div > main > div > div.task-form-page__main > div.task-form-page__content > div.activity-form.is-field-initially-focused._form_h8tMg.js-organization-project-tasks-task-2-route-activity-form > form > div.activity-form__actions-wrapper > button');
         if (visibleToAllSelected) {
