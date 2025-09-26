@@ -27,7 +27,7 @@ async function start() {
         const visibilityToggleButton = await waitForElm('#fullscreen-modal-container > div > main > div > div.task-form-page__main > div.task-form-page__content > div.activity-form.is-field-initially-focused._form_h8tMg.js-organization-project-tasks-task-2-route-activity-form > form > div.activity-form__actions-wrapper > button');
         if (visibleToAllSelected) {
             visibilityToggleButton.click();
-            const hideFromClientButton = await waitForElm('#modal-container > div > div.popover-content__body-wrapper > div > div > div > button:nth-child(2)');
+            const hideFromClientButton = await waitForElm('#modal-container > div > div > div > button:nth-child(2)');
             hideFromClientButton.click();
 
             visibleToAllSelected = false;
